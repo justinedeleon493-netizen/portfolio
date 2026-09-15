@@ -1,3 +1,5 @@
+import heroImage from '../assets/hero.png';
+
 function About() {
   return (
     <section id="about" className="relative overflow-hidden bg-white py-24 text-slate-900">
@@ -32,7 +34,7 @@ function About() {
           <div className="mb-6 flex justify-center">
             <div className="h-44 w-44 overflow-hidden rounded-full border-4 border-slate-200 bg-white shadow-xl shadow-slate-300/60">
               <img
-                src="/profile.jpg"
+                src={heroImage}
                 alt="Justine's profile portrait"
                 className="h-full w-full object-cover"
               />
