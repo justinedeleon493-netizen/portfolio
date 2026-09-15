@@ -1,61 +1,55 @@
 function About() {
   return (
-    <section id="about" className="relative overflow-hidden bg-slate-950 py-20 text-white">
-      <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_left,_rgba(34,211,238,0.22),transparent_35%),radial-gradient(circle_at_bottom_right,_rgba(99,102,241,0.18),transparent_30%)]" />
+    <section id="about" className="relative overflow-hidden bg-white py-24 text-slate-900">
+      <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_left,_rgba(20,184,166,0.12),transparent_35%),radial-gradient(circle_at_bottom_right,_rgba(14,165,233,0.08),transparent_30%)]" />
 
       <div className="relative mx-auto grid max-w-6xl items-center gap-12 px-5 md:grid-cols-[1.2fr_0.8fr] md:px-8">
         <div>
-          <p className="mb-4 inline-flex rounded-full border border-cyan-400/40 bg-cyan-400/10 px-3 py-1 text-xs font-medium uppercase tracking-[0.22em] text-cyan-200">
+          <p className="mb-4 inline-flex rounded-full border border-teal-200 bg-teal-50 px-3 py-1 text-xs font-medium uppercase tracking-[0.22em] text-teal-700">
             Portfolio
           </p>
-          <h1 className="max-w-xl text-4xl font-black leading-tight text-white md:text-6xl">
+          <h1 className="max-w-xl text-4xl font-black leading-tight tracking-tight text-slate-900 md:text-6xl">
             Building digital experiences that feel refined.
           </h1>
-          <p className="mt-6 max-w-xl text-lg leading-8 text-slate-300">
-            I’m Justine, a computer science student focused on creating clean,
-            responsive, and user-centered web applications with modern frontend
-            technologies.
+          <p className="mt-6 max-w-xl text-lg leading-8 text-slate-600">
+            I’m Justine, a BSIT student focused on creating clean,
+            responsive, and user-centered web applications.
           </p>
 
-          <div className="mt-8 flex flex-wrap gap-4">
-            <a
-              href="#projects"
-              className="rounded-full bg-cyan-400 px-6 py-3 text-sm font-semibold text-slate-950 transition hover:bg-cyan-300"
-            >
-              View projects
-            </a>
-          </div>
-
           <div className="mt-10 grid max-w-xl grid-cols-2 gap-4 text-left">
-            <div className="rounded-2xl border border-white/10 bg-white/5 p-4 backdrop-blur-sm">
-              <p className="text-2xl font-bold text-white">2+</p>
-              <p className="mt-1 text-sm text-slate-300">Years</p>
+            <div className="rounded-2xl border border-slate-200 bg-white/80 p-4 shadow-sm">
+              <p className="text-2xl font-bold text-slate-900">3+</p>
+              <p className="mt-1 text-sm text-slate-500">Years</p>
             </div>
-            <div className="rounded-2xl border border-white/10 bg-white/5 p-4 backdrop-blur-sm">
-              <p className="text-2xl font-bold text-white">8+</p>
-              <p className="mt-1 text-sm text-slate-300">Projects</p>
+            <div className="rounded-2xl border border-slate-200 bg-white/80 p-4 shadow-sm">
+              <p className="text-2xl font-bold text-slate-900">3+</p>
+              <p className="mt-1 text-sm text-slate-500">Projects</p>
             </div>
           </div>
         </div>
 
-        <div className="rounded-3xl border border-white/10 bg-white/5 p-6 shadow-2xl shadow-cyan-950/30 backdrop-blur-sm">
-          <div className="rounded-2xl border border-cyan-400/30 bg-slate-900 p-5">
-            <p className="text-sm uppercase tracking-[0.24em] text-cyan-200">Focus</p>
-            <h2 className="mt-4 text-2xl font-bold text-white">Frontend & product thinking</h2>
-            <ul className="mt-6 space-y-4 text-slate-300">
-              <li className="flex items-center gap-3">
-                <span className="h-2 w-2 rounded-full bg-cyan-400" />
-                Responsive, accessible interfaces
-              </li>
-              <li className="flex items-center gap-3">
-                <span className="h-2 w-2 rounded-full bg-indigo-400" />
-                React-powered experiences
-              </li>
-              <li className="flex items-center gap-3">
-                <span className="h-2 w-2 rounded-full bg-violet-400" />
-                Clean UI systems and UX polish
-              </li>
-            </ul>
+        <div className="rounded-3xl border border-slate-200 bg-white/85 p-6 shadow-xl shadow-slate-200/70 backdrop-blur-sm">
+          <div className="mb-6 flex justify-center">
+            <div className="h-44 w-44 overflow-hidden rounded-full border-4 border-slate-200 bg-white shadow-xl shadow-slate-300/60">
+              <img
+                src="/profile.jpg"
+                alt="Justine's profile portrait"
+                className="h-full w-full object-cover"
+              />
+            </div>
+          </div>
+
+          <div className="rounded-2xl border border-slate-200 bg-white p-5">
+            <p className="text-sm uppercase tracking-[0.24em] text-slate-500">Education</p>
+            <h2 className="mt-4 text-2xl font-bold text-slate-900">Bulacan State University</h2>
+            <p className="mt-2 leading-7 text-slate-600">
+              Bachelor of Science in Information Technology
+            </p>
+
+            <div className="mt-7 border-t border-slate-200 pt-5">
+              <p className="text-sm uppercase tracking-[0.24em] text-slate-500">Languages</p>
+              <p className="mt-3 text-lg font-semibold text-slate-900">Filipino and English</p>
+            </div>
           </div>
         </div>
       </div>

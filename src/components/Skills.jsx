@@ -1,33 +1,28 @@
 const skillList = [
-  "React",
-  "JavaScript (ES6+)",
-  "HTML5 & CSS3",
-  "Tailwind CSS",
+  "HTML",
+  "CSS",
+  "JavaScript",
+  "React.js",
   "Node.js",
-  "Git & GitHub",
-  "Responsive Design",
-  "Problem Solving",
+  "Tailwind",
 ];
 
 function Skills() {
   return (
-    <section id="skills" className="bg-slate-950 py-20 text-white">
+    <section id="skills" className="bg-white py-24 text-slate-900">
       <div className="mx-auto max-w-6xl px-5 md:px-8">
         <div className="mb-12 text-center">
-          <p className="text-sm font-semibold uppercase tracking-[0.24em] text-cyan-300">Capabilities</p>
-          <h2 className="mt-4 text-3xl font-bold md:text-4xl">Skills I use to craft polished digital products.</h2>
+          <p className="text-sm font-semibold uppercase tracking-[0.24em] text-teal-700">Tech stack</p>
+          <h2 className="mt-4 text-3xl font-bold tracking-tight text-slate-900 md:text-4xl">Tools I use to build websites.</h2>
         </div>
 
-        <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
+        <div className="flex flex-wrap justify-center gap-3">
           {skillList.map((skill) => (
             <div
               key={skill}
-              className="rounded-2xl border border-white/10 bg-slate-900/80 px-5 py-5 text-center shadow-md shadow-slate-950/20 transition hover:border-cyan-400/50 hover:bg-slate-900"
+              className="rounded-full border border-slate-200 bg-slate-50 px-6 py-3 text-center text-base font-semibold text-slate-800 shadow-sm transition hover:border-teal-300 hover:bg-white hover:text-teal-700 hover:shadow-md"
             >
-              <div className="mx-auto mb-3 flex h-11 w-11 items-center justify-center rounded-full bg-gradient-to-br from-cyan-400/20 to-indigo-500/20 text-cyan-300">
-                <span className="text-lg font-bold">•</span>
-              </div>
-              <p className="text-base font-semibold text-slate-100">{skill}</p>
+              {skill}
             </div>
           ))}
         </div>
