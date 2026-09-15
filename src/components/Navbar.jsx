@@ -15,7 +15,6 @@ function Navbar() {
           <a href="/#about" className="transition hover:text-white">About</a>
           <a href="/#projects" className="transition hover:text-white">Projects</a>
           <a href="/#skills" className="transition hover:text-white">Skills</a>
-          <a href="/#testimonials" className="transition hover:text-white">Testimonials</a>
           <a href="#contact" className="transition hover:text-white">Contact</a>
         </div>
       </nav>
